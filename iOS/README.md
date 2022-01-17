@@ -33,7 +33,7 @@ App客户端 ->> TXCopyrightedMedia:preloadMusic（传入musicId+playToken）
 TXCopyrightedMedia ->> 腾讯云后台:请求Music数据
 腾讯云后台 -->> TXCopyrightedMedia:返回Music数据
 TXCopyrightedMedia -->> App客户端:回调preloadMusic进度和结果
-App客户端 ->> TRTC SDK:startPlayMusic（传入genMusicURI返回值）
+App客户端 ->> GME SDK:startPlayMusic（传入genMusicURI返回值）
 ```
 ## 三、接入前准备工作
 
